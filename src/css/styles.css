@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-red: #ff6150;
+  --primary-color-dark: #072448;
+  --primary-color-blue: #54d2d2;
+  --primary-color-yellow: #ffcb00;
+  --primary-color-orange: #f8aa4b;
+  --height-250: 250px;
+  --width-250: 250px;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #eeeeee;
+}
+
+#home {
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.card:hover {
+  z-index: 1000;
+  -webkit-box-shadow: -7px 8px 11px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -7px 8px 11px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: -7px 8px 11px 3px rgba(0, 0, 0, 0.25);
+}
+
+.card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  scale: 1.01;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+.card:hover > img {
+  opacity: 1;
+}
+
+.red-card {
+  background: var(--primary-color-red);
+}
+
+.dark-card {
+  background: var(--primary-color-dark);
+}
+.blue-card {
+  background: var(--primary-color-blue);
+}
+.yellow-card {
+  background: var(--primary-color-yellow);
+}
+.orange-card {
+  background: var(--primary-color-orange);
+}
+
+.height-150 {
+  height: 150px;
+}
+
+.height-250 {
+  height: 250px;
+}
+
+.height-auto {
+  height: auto;
+}
+
+width-auto {
+  width: auto;
+}
+
+.width-150 {
+  width: 150px;
+}
+
+.width-250 {
+  width: 250px;
+}
